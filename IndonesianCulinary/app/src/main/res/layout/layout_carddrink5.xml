@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    tools:context=".Drink5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backdrink5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back"
+            android:layout_margin="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Sarabba"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/belgianoserif2"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/savedrink9"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_white"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:id="@+id/savedrink10"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_black"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sarabba"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sulawesi Selatan"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Sarabba adalah minuman tradisional yang berasal dari Makassar, Sulawesi Selatan. Minuman ini terkenal dengan cita rasanya yang hangat dan lezat, cocok dinikmati saat cuaca dingin atau malam hari. Sarabba terbuat dari campuran jahe yang dihaluskan, gula merah, santan, dan telur ayam kampung. Bahan-bahan ini direbus bersama untuk menghasilkan minuman yang kaya akan rasa dan memiliki tekstur yang kental.
+Jahe adalah bintang utama dalam minuman ini, memberikan sensasi hangat dan pedas yang menyegarkan tubuh. Gula merah menambahkan rasa manis yang mendalam dan kompleks, sedangkan santan memberikan rasa gurih dan krimi yang lezat. Telur ayam kampung yang dikocok menjadi bagian dari minuman ini memberikan kelembutan dan kepadatan pada tekstur sarabba.
+Minuman ini sering kali disajikan dengan tambahan rempah-rempah seperti kayu manis, cengkeh, atau pala, yang menambah kedalaman rasa dan aroma. Sarabba juga dapat diberi sedikit bubuk lada hitam untuk meningkatkan sensasi pedas dan memberikan rasa yang lebih kaya."
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/linkdrink5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Lihat Selengkapnya"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    tools:context=".Drink4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backdrink4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back"
+            android:layout_margin="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Es Dawet"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/belgianoserif2"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/savedrink7"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_white"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:id="@+id/savedrink8"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_black"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/esdawet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jawa Tengah"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Es dawet adalah minuman tradisional Indonesia yang dikenal dengan kelezatan dan kesegarannya. Minuman ini terdiri dari dawet, bahan utamanya yang terbuat dari campuran tepung beras dan tepung hunkwe. Dawet biasanya diberi pewarna alami seperti daun pandan atau daun suji untuk memberikan warna hijau atau warna lainnya yang cerah. Bentuk dawet biasanya berupa irisan panjang yang kenyal dan lembut, menciptakan tekstur menarik saat dikonsumsi.
+Es dawet juga terdiri dari sirup gula merah yang manis dan kental. Sirup ini dibuat dari gula merah yang direbus dengan air hingga larut dan membentuk sirup yang kaya akan rasa karamel. Sirup gula merah memberikan rasa manis yang khas dan lezat pada minuman ini. Santan segar adalah komponen lain dari es dawet yang memberikan rasa gurih dan krimi yang melengkapi sirup gula merah.
+Es dawet menjadi pilihan favorit banyak orang sebagai minuman penutup atau pelepas dahaga, terutama di hari yang panas. Kombinasi rasa manis, gurih, dan segar membuat es dawet menjadi minuman tradisional yang ikonik dan digemari di berbagai daerah di Indonesia, terutama di Jawa Tengah dan Jawa Timur."
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/linkdrink4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Lihat Selengkapnya"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

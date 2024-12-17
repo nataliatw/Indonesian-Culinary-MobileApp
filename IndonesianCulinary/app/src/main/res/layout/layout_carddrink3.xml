@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    tools:context=".Drink3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backdrink3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back"
+            android:layout_margin="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Es Cendol"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/belgianoserif2"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/savedrink5"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_white"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:id="@+id/savedrink6"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_black"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cendol"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jawa Timur"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Es cendol adalah minuman tradisional Indonesia yang sangat populer dan menyegarkan, terutama saat cuaca panas. Minuman ini terdiri dari cendol, bahan utama yang terbuat dari tepung beras atau tepung hunkwe yang dicampur dengan air pandan atau daun suji untuk memberikan warna hijau alami. Cendol memiliki tekstur kenyal dan lembut, dan sering dipotong pendek memanjang untuk memudahkan konsumsi.
+Minuman ini juga biasanya dilengkapi dengan sirup gula merah yang manis dan kental, yang memberikan cita rasa manis yang kaya dan mendalam. Sirup gula merah dibuat dengan cara merebus gula merah dengan air hingga larut dan membentuk sirup yang kental. Es cendol juga dilengkapi dengan santan segar, yang memberikan rasa gurih dan krimi yang lezat, menciptakan perpaduan rasa yang harmonis.
+Untuk menyajikan es cendol, cendol ditambahkan ke dalam gelas atau mangkuk, kemudian disiram dengan sirup gula merah dan santan. Es batu atau es serut ditambahkan untuk memberikan sensasi dingin dan menyegarkan. Beberapa varian es cendol juga dilengkapi dengan topping tambahan seperti kacang merah, tapai, atau nangka, menambah kompleksitas rasa dan tekstur pada minuman ini."
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/linkdrink3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Lihat Selengkapnya"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

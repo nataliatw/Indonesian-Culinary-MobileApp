@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    tools:context=".Drink6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backdrink6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back"
+            android:layout_margin="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Wedang Ronde"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/belgianoserif2"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/savedrink11"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_white"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:id="@+id/savedrink12"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_black"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/wedangronde"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jawa Tengah"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Wedang ronde adalah minuman tradisional Indonesia yang populer, terutama di Jawa Tengah dan Jawa Timur. Minuman ini terkenal dengan kehangatannya yang menyegarkan, serta komposisi bahan-bahannya yang unik dan lezat. Wedang ronde terdiri dari bola-bola ketan kenyal yang disebut ronde, yang terbuat dari tepung ketan dan diisi dengan kacang tanah cincang atau biji wijen, kemudian direbus hingga matang.
+Minuman ini disajikan dalam kuah jahe yang panas. Kuah jahe ini terbuat dari air jahe yang direbus dengan gula batu atau gula pasir, menciptakan rasa pedas, manis, dan hangat yang khas. Jahe memberikan sensasi hangat yang nyaman, terutama saat cuaca dingin atau hujan.
+Selain ronde, wedang ronde juga sering dilengkapi dengan tambahan bahan-bahan seperti potongan roti tawar, kacang tanah sangrai, kolang-kaling, dan potongan buah-buahan seperti nangka atau kelapa muda. Topping ini menambahkan variasi rasa dan tekstur yang menarik, membuat wedang ronde menjadi minuman yang kaya akan cita rasa."
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/linkdrink6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Lihat Selengkapnya"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

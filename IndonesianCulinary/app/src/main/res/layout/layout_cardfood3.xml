@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    tools:context=".Food3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backfood3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back"
+            android:layout_margin="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Batagor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/belgianoserif2"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/savefood5"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_white"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:id="@+id/savefood6"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_black"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/batagorbandung"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jawa Barat"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Batagor adalah hidangan khas Indonesia yang terkenal sebagai camilan lezat yang menggabungkan elemen gorengan dan saus kacang. Nama batagor berasal dari singkatan bakso tahu goreng, karena hidangan ini terdiri dari campuran bakso ikan atau daging, tepung, dan tahu yang dibalut adonan tepung dan kemudian digoreng hingga renyah.
+            Bahan utama batagor adalah ikan tenggiri atau daging ayam yang dihaluskan, lalu dicampur dengan tepung tapioka, bumbu-bumbu seperti bawang putih, garam, dan merica. Adonan ini kemudian diisi ke dalam tahu yang sudah dipotong-potong atau dibentuk menjadi bola-bola bakso, lalu digoreng hingga berwarna kecokelatan dan renyah di luar, namun tetap lembut di dalam.
+            Batagor biasanya disajikan dengan saus kacang yang lezat. Saus ini terbuat dari kacang tanah yang dihaluskan, lalu dicampur dengan bawang putih, cabai, gula, dan kecap manis. Saus kacang memberikan rasa manis, gurih, dan sedikit pedas yang menyatu sempurna dengan batagor yang renyah."
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/linkfood3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Lihat Selengkapnya"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

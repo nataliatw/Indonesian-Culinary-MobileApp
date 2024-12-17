@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    tools:context=".Drink1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backdrink1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back"
+            android:layout_margin="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Pisang Ijo"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/belgianoserif2"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/savedrink1"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_white"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:id="@+id/savedrink2"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save_black"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pisangijo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sulawesi Selatan"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/card">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Pisang ijo adalah minuman tradisional khas Makassar, Sulawesi Selatan, yang menyajikan kombinasi lezat dan menyegarkan antara pisang, adonan hijau, dan saus manis. Pisang yang digunakan adalah jenis pisang kepok atau pisang raja yang matang namun tetap kokoh. Pisang ini dibalut dengan adonan berbahan dasar tepung beras, tepung terigu, dan daun pandan, yang memberikan warna hijau alami serta aroma harum. Setelah dibalut, pisang dikukus hingga matang dan adonan berubah menjadi tekstur yang lembut dan kenyal.
+Pisang ijo biasanya disajikan dengan siraman saus santan kental yang manis, yang terbuat dari campuran santan, gula, dan sedikit tepung beras untuk menambah kekentalan. Saus ini memberikan rasa gurih dan manis yang lezat saat berpadu dengan pisang yang sudah dibalut. Untuk memberikan sensasi segar, es serut atau es batu sering ditambahkan di atas pisang ijo yang telah disajikan dengan saus.
+Minuman ini menjadi hidangan penutup yang populer di Makassar dan daerah sekitarnya, terutama saat cuaca panas. Kombinasi rasa manis, gurih, dan segar membuat pisang ijo menjadi favorit banyak orang. Hidangan ini juga bisa disajikan dengan tambahan pelengkap seperti sirup merah, cokelat cair, atau potongan kelapa muda untuk variasi rasa. Pisang ijo merupakan contoh kekayaan kuliner Indonesia yang memadukan cita rasa tradisional dengan sentuhan modern."
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/linkdrink1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Lihat Selengkapnya"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

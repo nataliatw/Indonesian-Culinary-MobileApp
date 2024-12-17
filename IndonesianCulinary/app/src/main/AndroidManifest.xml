@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IndonesianCulinary"
+        tools:targetApi="31">
+        <activity
+            android:name=".Drink6"
+            android:exported="false" />
+        <activity
+            android:name=".Drink5"
+            android:exported="false" />
+        <activity
+            android:name=".Drink4"
+            android:exported="false" />
+        <activity
+            android:name=".Drink3"
+            android:exported="false" />
+        <activity
+            android:name=".Drink2"
+            android:exported="false" />
+        <activity
+            android:name=".Food6"
+            android:exported="false" />
+        <activity
+            android:name=".Food5"
+            android:exported="false" />
+        <activity
+            android:name=".Food4"
+            android:exported="false" />
+        <activity
+            android:name=".Food3"
+            android:exported="false" />
+        <activity
+            android:name=".Food2"
+            android:exported="false" />
+        <activity
+            android:name=".Drink1"
+            android:exported="false" />
+        <activity
+            android:name=".Food1"
+            android:exported="false" />
+        <activity
+            android:name=".DrinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

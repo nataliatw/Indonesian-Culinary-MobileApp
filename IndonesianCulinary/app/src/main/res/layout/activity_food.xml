@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Indonesian"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/belgianoserif2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Culinary"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/belgianoserif2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="125dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan Indonesia terkenal dengan keanekaragaman rasa dan penggunaan bumbu-bumbu yang kaya. Masakan dari berbagai daerah di Indonesia mencerminkan warisan budaya dan tradisi kuliner yang berbeda-beda. Hidangan seperti nasi padang, coto, soto, dan batagor adalah contoh beberapa makanan yang sangat populer."
+            android:textColor="@color/white"
+            android:justificationMode="inter_word"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:fillViewport="true"
+        android:layout_marginTop="240dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imagesoto"
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/sotoayamkuning"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soto Ayam"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lamongan, Jawa Timur"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="65dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imagecoto"
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/cotomakassar"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coto"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Makassar, Sulsel"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="65dp"/>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imagebatagor"
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/batagorbandung"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Batagor"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bandung, Jawa Barat"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="65dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imagemiegomak"
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/miegomak"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mie Gomak"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Balige, Sumatera Utara"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="65dp"/>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="110dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imagemietiti"
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/mietiti"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mie Titi"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Makassar, SulSel"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="65dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imagenasipadang"
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/nasipadang"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nasi Padang"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Padang, Sumbar"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="65dp"/>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="40dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/nav_card">
+
+        <include
+            layout="@layout/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
